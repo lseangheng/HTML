@@ -1,0 +1,83 @@
+#wrap_page{
+    width: 1000px;
+    margin: 0 auto;
+}
+#logo{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 60%;
+}
+#form{
+    background: #fff;
+    width: 600px;
+    height: 55px;
+    display: flex;
+}
+#form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    width: auto;
+}
+#form button{
+    background: tomato;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#navigation{
+    background-color: #ddd;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    top: 20px;
+}
+#navigation ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+#navigation ul li ::after{
+    content: '';
+    background: #f44566;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+#navigation ul li :hover{
+    color: #fff;
+}
+#navigation ul li :hover ::after{
+    top: 50%;
+    opacity: 1;
+}
+#content{
+    margin-bottom: 20px;
+    padding-top: 30px; 
+    align-items: center;
+}
+
+
